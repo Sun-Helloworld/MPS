@@ -83,7 +83,7 @@
 
 #### 	1.架构
 
-​	![img](D:\Study\学习\实验\阿里合作\调研\MPS和Time-slicing\images\架构.png)
+​	![img](./images/架构.png)
 
 ​	由上图可以看出，同一时刻可以有多个kernel同时在运行
 
@@ -152,11 +152,11 @@ nvidia-smi -i 0 -r # 使用新设置重启 GPU 0。
 
 ​	未开启MPS
 
-​	![img](D:\Study\学习\实验\阿里合作\调研\MPS和Time-slicing\images\开启MPS运行四个nbody.jpg)
+​	![img](./images/开启MPS运行四个nbody.jpg)
 
 ​	开启MPS
 
-![img](D:\Study\学习\实验\阿里合作\调研\MPS和Time-slicing\images\未开启MPX运行四个nbody.jpg)
+![img](./images/未开启MPX运行四个nbody.jpg)
 
 ​	由上述可以看出对于nobody(512000)时间减少了20%左右
 
@@ -164,10 +164,10 @@ nvidia-smi -i 0 -r # 使用新设置重启 GPU 0。
 
 ​	一百次测试，产生八次错误错误类型都为Sl+（处于后台休眠状态的多线程）
 
-![img](D:\Study\学习\实验\阿里合作\调研\MPS和Time-slicing\images\100次测试.jpg)
+![img](./images/100次测试.jpg)
 
 ​	一千次测试，产生67次错误，错误类型都为Sl+
 
-![img](D:\Study\学习\实验\阿里合作\调研\MPS和Time-slicing\images\1000次测试.jpg)
+![img](./images/1000次测试.jpg)
 
 ​	经过多次测试，错误影响都在百分之6上下。同时都是造成其他进程处于休眠状态，需要重新启动。
