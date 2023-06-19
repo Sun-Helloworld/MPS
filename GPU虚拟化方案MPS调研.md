@@ -150,11 +150,11 @@ nvidia-smi -i 0 -r # 使用新设置重启 GPU 0。
 
 ##### 	2.1使用nbody测试
 
-​	未开启MPS
+​	开启MPS
 
 ​	![img](./images/开启MPS运行四个nbody.jpg)
 
-​	开启MPS
+​	未开启MPS
 
 ![img](./images/未开启MPX运行四个nbody.jpg)
 
